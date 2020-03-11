@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla_Juego">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/verdoso">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:background="@color/negro">
+
+            <ImageView
+                android:id="@+id/img_jugador_imagen1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription=""
+                android:layout_margin="10dp"
+                android:src="@android:color/holo_orange_dark"/>
+
+            <ImageView
+                android:id="@+id/img_jugador_vida1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription=""
+                android:layout_margin="10dp"
+                android:src="@color/rojo"/>
+
+            <TextView
+                android:id="@+id/txt_jugador_vida1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="100"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:id="@+id/img_jugador_cartas1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription=""
+                android:layout_margin="10dp"
+                android:src="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/txt_jugador_cartas1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="100"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/verdoso">
+
+            <ImageView
+                android:id="@+id/img_robar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription=""
+                android:layout_marginLeft="50dp"
+                android:layout_marginVertical="15dp"
+                android:src="@color/rojo"/>
+
+            <ImageView
+                android:id="@+id/img_tipo_turno"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription=""
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="120dp"
+                android:src="@color/rojo"/>
+
+            <ImageView
+                android:id="@+id/img_colocar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription=""
+                android:layout_marginRight="50dp"
+                android:layout_marginVertical="15dp"
+                android:src="@color/rojo"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:background="@color/verdoso">
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/azul">
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    --Colores de pantalla de juego
+    <color name="negro">#363636</color>
+    <color name="azul">#113C57</color>
+    <color name="verdoso">#009975</color>
+    <color name="rojo">#DA2828</color>
+</resources>
