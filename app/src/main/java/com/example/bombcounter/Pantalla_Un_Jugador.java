@@ -1,0 +1,14 @@
+package com.example.bombcounter;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class Pantalla_Un_Jugador extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pantalla__juego);
+    }
+}

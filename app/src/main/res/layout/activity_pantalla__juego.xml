@@ -13,10 +13,11 @@
         android:background="@color/verdoso">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
             android:background="@color/negro">
 
             <ImageView
@@ -24,90 +25,318 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:contentDescription=""
-                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginVertical="5dp"
+                android:layout_gravity="center"
                 android:src="@android:color/holo_orange_dark"/>
 
             <ImageView
                 android:id="@+id/img_jugador_vida1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:contentDescription=""
-                android:layout_margin="10dp"
-                android:src="@color/rojo"/>
+                android:layout_margin="15dp"
+                android:src="@drawable/Vida"/>
 
             <TextView
                 android:id="@+id/txt_jugador_vida1"
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
                 android:text="100"
                 android:textColor="#FFFFFF"
-                android:textSize="40dp"/>
+                android:textSize="35sp"
+                android:textAlignment="center"/>
 
             <ImageView
                 android:id="@+id/img_jugador_cartas1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
                 android:contentDescription=""
-                android:layout_margin="10dp"
-                android:src="#FFFFFF"/>
+                android:layout_margin="15dp"
+                android:src="@drawable/Numero"/>
 
             <TextView
                 android:id="@+id/txt_jugador_cartas1"
-                android:layout_width="70dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:text="100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="30dp"
+                android:text="3"
                 android:textColor="#FFFFFF"
-                android:textSize="40dp"/>
+                android:textSize="35sp"
+                android:textAlignment="center"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_gravity="center"
             android:background="@color/verdoso">
 
-            <ImageView
-                android:id="@+id/img_robar"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:contentDescription=""
-                android:layout_marginLeft="50dp"
-                android:layout_marginVertical="15dp"
-                android:src="@color/rojo"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginVertical="25dp"
+                android:background="@color/negro">
 
-            <ImageView
-                android:id="@+id/img_tipo_turno"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:contentDescription=""
-                android:layout_marginVertical="5dp"
-                android:layout_marginHorizontal="120dp"
-                android:src="@color/rojo"/>
+                <ImageView
+                    android:id="@+id/img_jugador_imagen2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription=""
+                    android:layout_marginTop="30dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:src="@android:color/holo_orange_dark"/>
 
-            <ImageView
-                android:id="@+id/img_colocar"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:contentDescription=""
-                android:layout_marginRight="50dp"
-                android:layout_marginVertical="15dp"
-                android:src="@color/rojo"/>
+                <ImageView
+                    android:id="@+id/img_jugador_vida2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:contentDescription=""
+                    android:layout_margin="15dp"
+                    android:src="@drawable/Vida"/>
+
+                <TextView
+                    android:id="@+id/txt_jugador_vida2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:text="100"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:id="@+id/img_jugador_cartas2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:contentDescription=""
+                    android:layout_margin="15dp"
+                    android:src="@drawable/Numero"/>
+
+                <TextView
+                    android:id="@+id/txt_jugador_cartas2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_tipo_turno"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:contentDescription=""
+                        android:layout_marginHorizontal="15dp"
+                        android:src="@drawable/Normal"/>
+                    <TextView
+                        android:id="@+id/txt_tiempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:layout_marginHorizontal="15dp"
+                        android:textColor="@color/rojo"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_cementerio"
+                        android:layout_width="90dp"
+                        android:layout_height="135dp"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="30dp"
+                        android:contentDescription=""
+                        android:src="@drawable/BombaI"/>
+
+                    <ImageView
+                        android:id="@+id/img_mazo"
+                        android:layout_width="135dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:contentDescription=""
+                        android:layout_margin="30dp"
+                        android:src="@drawable/BocaH"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginVertical="25dp"
+                android:background="@color/negro">
+
+                <ImageView
+                    android:id="@+id/img_jugador_imagen3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:contentDescription=""
+                    android:layout_marginTop="30dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:src="@android:color/holo_orange_dark"/>
+
+                <ImageView
+                    android:id="@+id/img_jugador_vida3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:contentDescription=""
+                    android:layout_margin="15dp"
+                    android:src="@drawable/Vida"/>
+
+                <TextView
+                    android:id="@+id/txt_jugador_vida3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="5dp"
+                    android:text="100"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35sp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:id="@+id/img_jugador_cartas3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:contentDescription=""
+                    android:layout_margin="15dp"
+                    android:src="@drawable/Numero"/>
+
+                <TextView
+                    android:id="@+id/txt_jugador_cartas3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
         </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="horizontal"
-        android:background="@color/verdoso">
-    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:background="@color/azul">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_jugador_imagen4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:contentDescription=""
+                    android:src="@android:color/holo_orange_dark" />
+
+                <ImageView
+                    android:id="@+id/img_jugador_vida4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:contentDescription=""
+                    android:layout_margin="15dp"
+                    android:src="@drawable/Vida"/>
+
+                <TextView
+                    android:id="@+id/txt_jugador_vida4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="100"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@color/azul">
+
+                <ImageView
+                    android:id="@+id/img_carta1"
+                    android:layout_width="90dp"
+                    android:layout_height="135dp"
+                    android:contentDescription=""
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="7dp"
+                    android:src="@drawable/Desarme"/>
+
+                <ImageView
+                    android:id="@+id/img_carta2"
+                    android:layout_width="90dp"
+                    android:layout_height="135dp"
+                    android:contentDescription=""
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="7dp"
+                    android:src="@drawable/Llamada"/>
+
+                <ImageView
+                    android:id="@+id/img_carta3"
+                    android:layout_width="90dp"
+                    android:layout_height="135dp"
+                    android:contentDescription=""
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="7dp"
+                    android:src="@drawable/BombaD"/>
+
+                <ImageView
+                    android:id="@+id/img_carta4"
+                    android:layout_width="90dp"
+                    android:layout_height="135dp"
+                    android:contentDescription=""
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="7dp"
+                    android:src="@drawable/Dia"/>
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
